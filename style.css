@@ -1459,3 +1459,61 @@ footer {
 .certificate-link:hover {
     transform: translateX(4px);
 }
+/* ================= BLOG ================= */
+
+.blog-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 35px;
+    margin-top: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 255, 170, 0.45);
+}
+
+.blog-icon {
+    font-size: 45px;
+    min-width: 70px;
+}
+
+.blog-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: 0.75;
+    margin-bottom: 20px;
+}
+
+.blog-link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.blog-link:hover {
+    transform: translateX(5px);
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .blog-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px;
+    }
+
+}
